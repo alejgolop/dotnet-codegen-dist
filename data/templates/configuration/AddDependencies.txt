@@ -1,0 +1,1 @@
+services.AddScoped(typeof(I${EntitySimpleName}Repository), typeof(${EntitySimpleName}Repository));

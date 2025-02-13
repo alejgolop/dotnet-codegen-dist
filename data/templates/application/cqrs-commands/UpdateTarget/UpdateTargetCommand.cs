@@ -1,0 +1,1 @@
+﻿public record Update${EntitySimpleName}Command(${EntitySimpleName}DTO ${EntitySimpleName}DTO) : ICommand<${EntitySimpleName}Response>;

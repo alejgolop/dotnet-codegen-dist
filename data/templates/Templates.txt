@@ -1,0 +1,59 @@
+${EntitySimpleName}
+${EntityPluralName}
+${EntityID}
+${EntityTypeID}
+${ContextClassName}
+
+${PropertyName}
+
+
+${Properties} -> public string Name {get;set;}
+
+${PropertiesConfiguration} -> builder.Property(x => x.UIDTarget).HasDefaultValueSql("newid()");
+${ModelPropertiesMapping} -> Name = model.Name,
+${DTOPropertiesMapping} -> Name = dto.Name,
+${EntityPropertiesMapping} -> Name = entity.Name,
+
+${PropertiesValidationRules} -> RuleFor(x => x.UIDTarget);
+
+Datos
+-----------
+EntitySimpleName
+EntityPluralName
+PropertyName
+PropertyDefinition
+
+
+TargetEntity
+TargetEntityConfig
+ITargetRepository
+TargetRepository
+TargetModel
+TargetDTO
+TargetMapper
+TargetDTOValidator
+
+GetTargetById
+	GetTargetByIdQuery
+	GetTargetByIdQueryHandler
+	TargetResponse
+	
+GetAllTargets
+	GetAllTargetsQuery
+	GetAllTargetsQueryHandler
+	AllTargetsResponse
+
+CreateTarget
+	CreateTargetCommand
+	CreateTargetCommandHandler
+	
+UpdateTarget
+	UpdateTargetCommand
+	UpdateTargetCommandHandler
+
+DeleteTarget
+	DeleteTargetCommand
+	DeleteTargetCommandHandler
+	
+	
+TargetsController

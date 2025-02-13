@@ -1,0 +1,1 @@
+﻿public record GetAll${EntityPluralName}Query() : IQuery<All${EntityPluralName}Response>;

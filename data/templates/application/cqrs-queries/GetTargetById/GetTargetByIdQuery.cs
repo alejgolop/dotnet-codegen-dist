@@ -1,0 +1,1 @@
+﻿public record Get${EntitySimpleName}ByIdQuery(${EntityTypeID} Id) : IQuery<${EntitySimpleName}Response>;

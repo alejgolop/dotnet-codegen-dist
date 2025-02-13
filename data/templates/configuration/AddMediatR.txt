@@ -1,0 +1,5 @@
+typeof(Get${EntitySimpleName}ByIdQuery).Assembly,
+typeof(GetAll${EntityPluralName}Query).Assembly,
+typeof(Create${EntitySimpleName}Command).Assembly,
+typeof(Update${EntitySimpleName}Command).Assembly,
+typeof(Delete${EntitySimpleName}Command).Assembly

@@ -1,0 +1,1 @@
+﻿public sealed record All${EntityPluralName}Response(IEnumerable<${EntitySimpleName}DTO> ${EntityPluralName}DTO);

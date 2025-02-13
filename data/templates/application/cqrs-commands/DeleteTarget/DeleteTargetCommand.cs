@@ -1,0 +1,1 @@
+﻿public record Delete${EntitySimpleName}Command(${EntityTypeID} Id) : ICommand;
