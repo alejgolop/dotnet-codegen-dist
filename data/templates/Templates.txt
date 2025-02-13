@@ -57,3 +57,6 @@ DeleteTarget
 	
 	
 TargetsController
+
+
+ng build --configuration -production --base-href https://alejgolop.github.io/dotnet-codegen-dist/
