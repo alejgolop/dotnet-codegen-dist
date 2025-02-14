@@ -4,6 +4,6 @@
     {
         builder.ToTable("${EntityPluralName}");
         builder.HasKey(e => e.${EntityID});
-    ${PropertiesConfiguration}
+${PropertiesConfiguration}
     }
 }
