@@ -1,1 +1,0 @@
-import{f as o}from"./chunk-RYAAWVOP.js";import{f as m}from"./chunk-7DT6FXDQ.js";var r=m(o());function n(t){return(0,r.default)(t).format("HH:mm:ss DD/MM/YYYY")}function Y(t){return(0,r.default)(t).format("HH.mm.ss DD_MM_YYYY")}export{n as a,Y as b};
