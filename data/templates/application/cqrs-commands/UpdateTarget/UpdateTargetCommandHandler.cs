@@ -23,7 +23,7 @@
             await _unitOfWork.SaveChangesAsync();
             return Result.Success(new ${EntitySimpleName}Response(newEntity.ConvertToDTO()));
         }
-        return Result.Fail<${EntitySimpleName}Response>(new Error(HttpStatusCode.NotFound,
+        return Result.Fail<${EntitySimpleName}Response>(new Error(HttpStatusCode.BadRequest,
             ExceptionStrings.CannotUpdate${EntitySimpleName}));
     }
 }

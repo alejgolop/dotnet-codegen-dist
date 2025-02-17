@@ -12,7 +12,7 @@ public class ${EntityPluralName}Controller(ISender sender) : ControllerBase
         return response.IsSuccess ? Ok(response) : NotFound(response.Error);
     }
 
-    [HttpPost("GetAll${EntityPluralName}")]
+    [HttpGet("GetAll${EntityPluralName}")]
     public async Task<IActionResult> GetAll${EntityPluralName}(CancellationToken cancellationToken)
     {
         var query = new GetAll${EntityPluralName}Query();
