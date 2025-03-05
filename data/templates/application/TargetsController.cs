@@ -41,6 +41,6 @@ public class ${EntityPluralName}Controller(ISender sender) : ControllerBase
     {
         var query = new Delete${EntitySimpleName}Command(id);
         var response = await _sender.Send(query, cancellationToken);
-        return response.IsSuccess ? Ok(response) : NotFound(response.Error);
+        return response.IsSuccess ? Ok(response) : BadRequest(response.Error);
     }
 }

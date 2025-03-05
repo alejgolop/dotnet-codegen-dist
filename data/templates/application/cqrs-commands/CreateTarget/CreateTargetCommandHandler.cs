@@ -10,10 +10,10 @@
         
         if(model.IsValid())
         {
-            ${EntitySimpleName}Entity ${EntitySimpleName}Entity = model.ConvertToEntity();
-            await _${EntitySimpleName}Repository.Add(${EntitySimpleName}Entity);
+            ${EntitySimpleName}Entity entity = model.ConvertToEntity();
+            await _${EntitySimpleName}Repository.Add(entity);
             await _unitOfWork.SaveChangesAsync();
-            return Result.Success(new ${EntitySimpleName}Response(${EntitySimpleName}Entity.ConvertToDTO()));
+            return Result.Success(new ${EntitySimpleName}Response(entity.ConvertToDTO()));
         }
         return Result.Fail<${EntitySimpleName}Response>(new Error(HttpStatusCode.BadRequest,
             ExceptionStrings.CannotCreate${EntitySimpleName}));
